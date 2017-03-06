@@ -1,0 +1,14 @@
+if(!paused)
+{
+    paused=true;
+    draw_enable_drawevent(0);
+    application_surface_draw_enable(0);
+    instance_deactivate_all(1);
+}
+else
+{
+    paused=false;
+    draw_enable_drawevent(1);
+    application_surface_draw_enable(1);
+    instance_activate_all();  
+}
